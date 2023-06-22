@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout4</title>
+    <style>
+        * {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        #R1 {
+            background-color: gray;
+            height: 50px;
+            padding-top: 20px;
+            width: 98%;
+            padding-left: 2%;
+            margin-bottom: 10px;
+        }
+
+        #R2 {
+            height: 600px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        #R2C1,
+        #R2C2 {
+            float: left;
+            height: 600px;
+        }
+
+        #R2C1 {
+            width: 30%;
+        }
+
+        #R2C2 {
+            width: 70%;
+        }
+
+        #R2C2R1 {
+            height: 100px;
+            padding-top: 90px;
+            margin-bottom: 10px;
+            background-color: gray;
+            text-align: center;
+        }
+
+        #R2C2R2 {
+            height: 300px;
+            padding-top: 100px;
+            background-color: gray;
+            text-align: center;
+        }
+
+        #R3 {
+            height: 33px;
+            width: 100%;
+            padding-top: 5px;
+            text-align: center;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="R1">Logo</div>
+        <div id="R2">
+            <div id="R2C1">Side Bar Navigater</div>
+            <div id="R2C2">
+                <div id="R2C2R1">Header/Banner</div>
+                <div id="R2C2R2">Body Area</div>
+            </div>
+        </div>
+        <div id="R3">Footer</div>
+    </div>
+
+</body>
+
+</html>
