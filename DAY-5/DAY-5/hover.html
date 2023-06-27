@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Main li ul li {
+            display: none;
+        }
+
+        #Main li:hover ul li {
+            display: block;
+        }
+
+        #Main li:hover ul li ul li {
+            display: none;
+        }
+
+        #Main li ul li:hover ul li {
+            display: block;
+        }
+
+        #Main li ul li:hover ul li ul li {
+            display: none;
+        }
+
+        #Main li ul li ul li:hover ul li {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="Main">
+        <li>Google
+            <ul>
+                <li>Gamil
+
+                    <ul>
+                        <li>Sign up</li>
+                        <li>Sign in
+                            <ul>
+                                <li>Sign in as Admin</li>
+                                <li>Sign in as Member</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Youtube</li>
+                <li>G-Drive</li>
+                <li>G-Map</li>
+            </ul>
+        </li>
+        <li>Facebook</li>
+        <li>Microsoft
+            <ul>
+                <li>Bin</li>
+                <li>Link din</li>
+            </ul>
+        </li>
+        <li>MSN</li>
+        <li>Amazon
+            <ul>
+                <li>AWS</li>
+                <li>Ecommrce</li>
+                <li>A-ML</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

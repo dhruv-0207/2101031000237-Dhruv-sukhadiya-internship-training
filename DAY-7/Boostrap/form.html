@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #CNAForm {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0px 0px 3px gray;
+            background-color: antiquewhite;
+        }
+
+        i.fa,
+        b {
+            color: teal;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="comtainer">
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 col-lg-offset-4" id="CNAForm">
+                <h3 class="text-center"><i class="fa fa-user"></i>Create New Account</h3>
+                <div class="form-group"><b>Firstname</b>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <input id="TxtFirstName" type="text" maxlength="20" placeholder="Enter First-Name ">
+                    </div>
+                    <small id="TxtFirstNameValidate" class="text-danger"></small>
+                </div>
+                <div class="form-group"><b>LastName</b>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <input id="TxtLastName" type="text" maxlength="20" placeholder="Enter Last-Name ">
+                    </div>
+                    <small id="TxtLastNameValidate" class="text-danger"></small>
+                </div>
+                <div class="form-group"><b>Contact</b>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-address-book"></i>
+                        </span>
+                        <input id="TxtNumber" type="text" maxlength="10" placeholder="Enter Contact No. ">
+                    </div>
+                    <small id="TxtNumberValidate" class="text-danger"></small>
+                </div>
+                <div class="form-group"><b>Gender:</b>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-female"></i>
+                            <i class="fa fa-male"></i>
+                        </span>
+                        <select class="form-control" id="DDL-Gender">
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><b>Email Id</b>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                            <input id="TxtEmailId" type="text" maxlength="50" placeholder="Enter Email Address. ">
+                        </div>
+                        <small id="TxtEmailIdValidate" class="text-danger"></small>
+                    </div>
+                    <div class="form-group"><b>Password</b>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-lock"></i>
+                            </span>
+                            <input id="TxtpassId" type="password" maxlength="20" placeholder="Enter Password ">
+                        </div>
+                        <small id="TxtNumberValidate" class="text-danger"></small>
+                    </div>
+                    <div class="form-group">
+                        <a id="BtnCreateNewAccount" class="btn btn-primary">
+                            <i class="fa fa-user-plus" style="color: #ffffff;"></i>
+                            Create New Account
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
