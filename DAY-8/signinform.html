@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px, 40px;
+            margin: 0px, 0;
+            display: inline-block;
+            border: 1px, solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: rgb(72, 72, 225);
+            color: white;
+            padding: 14px, 20px;
+            margin: 0px, 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .container {
+            padding: 80px;
+        }
+
+        .fontuser {
+            position: relative;
+        }
+
+        /* .fontuser i {
+            position: absolute;
+            left: 15px;
+            top: 40px;
+            color: rgb(11, 11, 97);
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="text-center"><i class="fa fa-user"></i>Sign in</h3>
+        <div class="fontuser"><label><b>Username</b></label>
+
+            <input type="text" placeholder="Enter username" name="uname" required>
+            <i class="fa fa-user fa-lg"></i>
+        </div>
+        <div class="fontpassword">
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter password" name="psw" required>
+            <i class="fa fa-key fa-lg"></i>
+
+        </div>
+        <button type="submit">login</button>
+        <label>
+            <input type="checkbox" checked="checked">
+            Remember</label>
+
+    </div>
+</body>
+
+</html>

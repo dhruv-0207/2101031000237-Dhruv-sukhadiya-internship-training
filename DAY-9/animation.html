@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+    
+      $('#button4').click(function() {
+        var div = $("div");
+        div.animate({height: '300px', opacity: '0.4'}, "slow");
+        div.animate({width: '300px', opacity: '0.8'}, "slow");
+        div.animate({height: '100px', opacity: '0.4'}, "slow");
+        div.animate({width: '100px', opacity: '0.8'}, "slow");
+      });
+    });
+  </script>
+  <script>
+        $(document).ready(function() {
+      // Button 1 click event
+      $('#button1').click(function() {
+          $("div").animate({
+            left: '+=250px',
+           
+          });
+      });
+      
+      $('#button2').click(function() {
+          $("div").animate({
+            height: '+=150px'
+          });
+      });
+
+      $('#button3').click(function() {
+          $("div").animate({
+            width: '+=150px'
+          });
+      });
+    });
+  </script>
+</head>
+<body>
+  <button id="button1" class="button">animation 1</button>
+  <button id="button2" class="button">animation 2</button>
+  <button id="button3" class="button">animation 3</button>
+  <button id="button4" class="button">animation 4</button>
+  <p></p>
+
+  <div style="background:#680c9a;height:100px;width:100px;position:absolute;"></div>
+</body>
+</html>

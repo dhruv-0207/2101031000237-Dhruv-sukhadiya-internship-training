@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Do While Loop</h2>
+    <p>DO WHILE LOOP</p>
+    <p id="demo"></p>
+    <script>
+        let text="";
+        let i=10;
+        do {
+            text+="<br>The number is"+i;
+            i++;
+        } while(i<20);
+        document.getElementById("demo").innerHTML=text;
+    </script>
+    <p>FOR LOOP</p>
+    <p id="demo2"></p>
+    <script>
+        const cars=["BMW","PORSHE","SUPRA","RANGE-ROVER"];
+        let text2="";
+        for (let x of cars){
+            text2+=x +"<br>";
+        }
+        document.getElementById("demo2").innerHTML=text2;
+    </script>
+</body>
+</html>
